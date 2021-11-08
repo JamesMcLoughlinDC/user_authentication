@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Login</h1>
+<form method = "post">
+    {% csrf_token %}
+    <!-- This code loads django's preset registration form... -->
+    {{form.as_p}}
+
+    <button>Login</button> 
+    
+</form>
+
+{% endblock %}
